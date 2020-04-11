@@ -1,17 +1,12 @@
-readme.md:
-	touch readme.md
+README.md: guessinggame.sh
+	touch README.md
+	echo "Peer-reviewed assignment"  > README.md
+	echo " " >> README.md	
+	echo "The date and time at which make was run is:"  >> README.md
+	date >> README.md
+	echo " " >> README.md
+	echo "the number of lines in guessingame is:"  >> README.md
+	wc -l < guessinggame.sh >> README.md
 
-
-readme.md: guessinggame.sh
-	echo "Peer-reviewed assignment"  > readme.md
-	echo " " >> readme.md
-	echo "The date and time at which make was run is:"  >> readme.md
-	date >> readme.md
-	echo " " >> readme.md
-	echo "the number of lines in guessingame is:"  >> readme.md
-	wc -l guessinggame.sh >> readme.md
-	
-
-	
 
 
