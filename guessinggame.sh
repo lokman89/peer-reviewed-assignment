@@ -9,7 +9,7 @@ echo "type the total number of files in my directory then press Enter:"
 read response
 
 
-number_of_files=$(ls | wc -l)-1	
+number_of_files=$(ls | wc -l)
 
 number=0
 
